@@ -1,10 +1,12 @@
 * {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 html,
 body {
   height: 100%;
+  margin: 0;
+  background-color: #d87093;
 }
 
 main {
@@ -14,6 +16,5 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #d87093;
   font-size: 8vw;
 }

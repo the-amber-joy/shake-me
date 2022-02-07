@@ -1,6 +1,3 @@
-// VARIABLES
-const main = document.getElementById("main");
-
 // LISTENERS
 var shakeEvent = new Shake({ threshold: 8 });
 shakeEvent.start();
@@ -23,6 +20,8 @@ function changeColors() {
     return (~~(Math.random() * 16)).toString(16);
   });
 
-  main.style.backgroundColor = randomColor1;
+  document.body.style.backgroundColor = randomColor1;
   main.style.color = randomColor2;
 }
+
+onclick = () => changeColors();
