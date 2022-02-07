@@ -17,4 +17,5 @@ main {
   flex-direction: column;
   justify-content: center;
   font-size: 8vw;
+  text-shadow: 0 0 2px #000, 0 0 3px #fff;
 }

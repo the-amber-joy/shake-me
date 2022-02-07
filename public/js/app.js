@@ -38,4 +38,5 @@ function changeColors() {
 function isVowel(c) {
   return ['a', 'e', 'i', 'o', 'u'].indexOf(c.toLowerCase()) !== -1
 }
+
 // onclick = () => changeColors();
