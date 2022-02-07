@@ -10,6 +10,7 @@ function init() {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("../service-worker.js");
   }
+  ntc.init();
 }
 
 function changeColors() {
@@ -22,6 +23,19 @@ function changeColors() {
 
   document.body.style.backgroundColor = randomColor1;
   main.style.color = randomColor2;
+
+  const color1 = ntc.name(randomColor1)[1];
+  let bgColor = `a ${ntc.name(randomColor1)[1]}`;
+  const color2 = ntc.name(randomColor2)[1];
+
+  if (isVowel(color1.charAt(0))) {
+    bgColor = `an ${color1}`
+  }
+
+  main.innerHTML = `${color2} Text on ${bgColor} Background`;
 }
 
-onclick = () => changeColors();
+function isVowel(c) {
+  return ['a', 'e', 'i', 'o', 'u'].indexOf(c.toLowerCase()) !== -1
+}
+// onclick = () => changeColors();

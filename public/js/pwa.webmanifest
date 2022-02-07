@@ -1,7 +1,7 @@
 {
   "name": "Shake Me",
   "short_name": "Shake Me",
-  "description": "Does what it says",
+"description": "Change Colors",
   "icons": [
     {
       "src": "../img/splash-screen.png",

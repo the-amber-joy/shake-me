@@ -5,6 +5,7 @@ const toCache = [
   "./style.css",
   "./js/app.js",
   "./js/shake.js",
+  "./js/ntc.js",
 ];
 
 self.addEventListener("install", function (event) {
