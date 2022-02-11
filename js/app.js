@@ -39,4 +39,7 @@ function isVowel(c) {
   return ['a', 'e', 'i', 'o', 'u'].indexOf(c.toLowerCase()) !== -1
 }
 
-// onclick = () => changeColors();
+
+// allow click to change color if no motion detection available on this device
+const hasDeviceMotion = 'ondevicemotion' in window;
+!hasMotionDetection ? onclick = () => changeColors() : null
