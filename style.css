@@ -20,3 +20,7 @@ main {
   text-shadow: 0 0 2px #000, 0 0 3px #fff;
   color: #fff;
 }
+
+#note {
+  font-size: 3vw;
+}

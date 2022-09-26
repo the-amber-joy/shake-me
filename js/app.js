@@ -2,6 +2,7 @@
 var shakeEvent = new Shake({ threshold: 8 });
 shakeEvent.start();
 window.addEventListener("shake", () => changeColors(), false);
+window.addEventListener("click", () => changeColors(), false);
 
 document.addEventListener("DOMContentLoaded", init, false);
 
@@ -14,12 +15,15 @@ function init() {
 }
 
 function changeColors() {
-  var randomColor1 = "#000000".replace(/0/g, function () {
-    return (~~(Math.random() * 16)).toString(16);
-  });
-  var randomColor2 = "#000000".replace(/0/g, function () {
-    return (~~(Math.random() * 16)).toString(16);
-  });
+  // var randomColor1 = "#000000".replace(/0/g, function () {
+  //   return (~~(Math.random() * 16)).toString(16);
+  // });
+  // var randomColor2 = "#000000".replace(/0/g, function () {
+  //   return (~~(Math.random() * 16)).toString(16);
+  // });
+
+  randomColor1 = "#ffff00"
+  randomColor2 = "#ffff00"
 
   document.body.style.backgroundColor = randomColor1;
   main.style.color = randomColor2;
@@ -38,6 +42,8 @@ function changeColors() {
 function isVowel(c) {
   return ['a', 'e', 'i', 'o', 'u'].indexOf(c.toLowerCase()) !== -1
 }
+
+onclick = () => {console.log("FOO"); changeColors()}
 
 
 // allow click to change color if no motion detection available on this device
