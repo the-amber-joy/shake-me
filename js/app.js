@@ -40,7 +40,8 @@ function isVowel(c) {
 }
 
 // allow click to change color if no motion detection available on this device
-const hasMotionDetection = "ondevicemotion" in window;
+// const hasMotionDetection = "ondevicemotion" in window;
 onclick = () => {
-  if (!hasMotionDetection) changeColors();
+  // if (!hasMotionDetection) 
+    changeColors();
 };
