@@ -29,17 +29,18 @@ function changeColors() {
   const color2 = ntc.name(randomColor2)[1];
 
   if (isVowel(color1.charAt(0))) {
-    bgColor = `an ${color1}`
+    bgColor = `an ${color1}`;
   }
 
   main.innerHTML = `${color2} Text on ${bgColor} Background`;
 }
 
 function isVowel(c) {
-  return ['a', 'e', 'i', 'o', 'u'].indexOf(c.toLowerCase()) !== -1
+  return ["a", "e", "i", "o", "u"].indexOf(c.toLowerCase()) !== -1;
 }
 
-
 // allow click to change color if no motion detection available on this device
-const hasDeviceMotion = 'ondevicemotion' in window;
-!hasMotionDetection ? onclick = () => changeColors() : null
+const hasMotionDetection = "ondevicemotion" in window;
+onclick = () => {
+  if (!hasMotionDetection) changeColors();
+};
