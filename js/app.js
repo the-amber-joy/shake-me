@@ -15,6 +15,10 @@ function init() {
     main.innerHTML = "CLICK ME";
   }
 }
+console.log("hasMotionDetection", hasMotionDetection)
+console.log("typeof DeviceMotionEvent.requestPermission", typeof DeviceMotionEvent.requestPermission)
+console.log("DeviceMotionEvent.requestPermission", DeviceMotionEvent.requestPermission)
+
 
 document.body.onclick = () => {
   // iOS 13+ feature detect
