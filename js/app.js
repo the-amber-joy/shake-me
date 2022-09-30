@@ -20,7 +20,7 @@ function init() {
 
 document.body.onclick = () => {
   // iOS 13+ feature detect
-  if (DeviceMotionEvent && typeof DeviceMotionEvent.requestPermission === "function") {
+  if (DeviceMotionEvent && localStorage.getItem("permissionGranted") == "true")) {
     /**
      * The name "requestPermission" is a bit of a misnomer.
      * ... "requestPermission" checks if the permission is set and returns the status.
