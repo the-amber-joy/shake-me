@@ -9,7 +9,7 @@ function init() {
   }
   ntc.init();
 
-  if (hasMotionDetection && localStorage.getItem("permissionGranted") == "true")) {
+  if (hasMotionDetection && localStorage.getItem("permissionGranted") == "true") {
     main.innerHTML = "SHAKE ME";
   } else {
     main.innerHTML = "CLICK ME";
