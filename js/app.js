@@ -16,8 +16,7 @@ function init() {
   }
 }
 console.log("hasMotionDetection", hasMotionDetection)
-console.log("typeof DeviceMotionEvent.requestPermission", typeof DeviceMotionEvent.requestPermission)
-console.log("DeviceMotionEvent.requestPermission", DeviceMotionEvent.requestPermission)
+console.log("DeviceMotionEvent", DeviceMotionEvent)
 
 
 document.body.onclick = () => {
