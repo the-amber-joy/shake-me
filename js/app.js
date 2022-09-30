@@ -54,7 +54,7 @@ document.body.onclick = () => {
     // if this is not an iOS 13+ device,
     // check for motion. IF not, do the thing because we clicked.
     // if yes, use the Shake event 
-    if (!hasMotionDetection) {
+    if (!hasMotionDetection || localStorage.getItem("permissionGranted") !== "true")) {
       changeColors();
     }
     startShakeEvent();
