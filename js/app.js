@@ -12,10 +12,10 @@ function init() {
 }
 function changeColors() {
   var randomColor1 = "#000000".replace(/0/g, function () {
-    return ((Math.random() * 16)).toString(16);
+    return (~~(Math.random() * 16)).toString(16);
   });
   var randomColor2 = "#000000".replace(/0/g, function () {
-    return ((Math.random() * 16)).toString(16);
+    return (~~(Math.random() * 16)).toString(16);
   });
   document.body.style.backgroundColor = randomColor1;
   main.style.color = randomColor2;
