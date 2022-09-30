@@ -9,7 +9,7 @@ function init() {
   }
   ntc.init();
 
-  if (hasMotionDetection && !(DeviceMotionEvent)) {
+  if (hasMotionDetection && localStorage.getItem("permissionGranted") == "true")) {
     main.innerHTML = "SHAKE ME";
   } else {
     main.innerHTML = "CLICK ME";
@@ -20,7 +20,7 @@ function init() {
 
 document.body.onclick = () => {
   // iOS 13+ feature detect
-  if (DeviceMotionEvent && localStorage.getItem("permissionGranted") == "true")) {
+  if (typeof DeviceMotionEvent.requestPermission == "function") {
     /**
      * The name "requestPermission" is a bit of a misnomer.
      * ... "requestPermission" checks if the permission is set and returns the status.
