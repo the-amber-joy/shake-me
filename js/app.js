@@ -9,7 +9,7 @@ function init() {
   }
   ntc.init();
 
-  if (hasMotionDetection) {
+  if (hasMotionDetection && !(typeof DeviceMotionEvent.requestPermission === "function")) {
     main.innerHTML = "SHAKE ME";
   } else {
     main.innerHTML = "CLICK ME";
