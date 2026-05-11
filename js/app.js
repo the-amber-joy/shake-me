@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", init, false);
 // FUNCTIONS
 function init() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("../service-worker.js");
+    navigator.serviceWorker.register("/service-worker.js");
   }
   ntc.init();
 }
